@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="QuizNetworkSec.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CodingCraft</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Courses</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="quiz-section">
+        <h2>Test Your Knowledge In <br>Network Security</h2>
+        <div class="quiz-container">
+        <div class="quiz-item">
+            <h3>Question 1: Action = Redirect is applied in:</h3>
+            <div class="quiz-options">
+                <label class="quiz-option">
+                    <input type="radio" name="q1" value="A">
+                    <span>A. Chain=srcnat</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q1" value="B">
+                    <span>B. Chain=dstnat</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q1" value="C">
+                    <span>C. Chain=foward</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q1" value="D">
+                    <span>D. All of the above</span>
+                </label>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                <span>Correct Answer</span>
+                </button>
+                <div class="dropdown-content">
+                  <p>B. Chain=dstnat</p>
+                </div>
+              </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 2: Choose all valid host address ranges for subnet 15.242.55.62/27</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q2" value="A">
+            <span>A.  15.242.55.31-15.242.55.62
+            </span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q2" value="B">
+            <span>B. 15.242.55.32-15.242.55.63</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q2" value="C">
+            <span>C. 15.242.55.33-15.242.55.62</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q2" value="D">
+            <span>D. 15.242.55.33-15.242.55.63</span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>C. 15.242.55.33-15.242.55.62</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 3: You have an 802.11b/g wireless card. What frequencies are available to you?</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q3" value="A">
+            <span>A. 5800MHz</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q3" value="B">
+            <span>B. 2412MHz</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q3" value="C">
+            <span>C. 5210MHz</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q3" value="D">
+            <span>D. 2327MHz</span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>B. 2412MHz</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 4: Which is correct masquerade rule for 192.168.0.0/24 network on the router with outgoing interface=ether1</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q4" value="A">
+            <span>A. /ip firewall nat add action=masquerade chain=srcnat</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q4" value="B">
+            <span>B. /ip firewall nat add action=masquerade chain=srcnat src-address=192.168.0.0/24</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q4" value="C">
+            <span>C.  /ip firewall nat add action=masquerade out-interface=ether1 chain=dstnat</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q4" value="D">
+            <span>D. /ip firewall nat add action=masquerade chain=srcnat out-interface=ether1</span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>D. /ip firewall nat add action=masquerade chain=srcnat out-interface=ether1</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 5: Action=redirect allows you to make?</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q5" value="A">
+            <span>A. Transparent DNS Cache</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q5" value="B">
+            <span>B. Foward DNS to another device IP address</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q5" value="C">
+            <span>C. Enable local service</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q5" value="D">
+            <span>D. Transparent HTTP Proxy</span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>A. Transparent DNS Cache
+            D. Transparent HTTP Proxy</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 6: Can you manually add drivers to RouterOS in case your PCI Ethernet card is not recognized, and it's a driver issue?</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q6" value="A">
+            <span>A. Yes</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q6" value="B">
+            <span>B. No </span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>B. No</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 7: For static routing functionality, additionally to the RouterOS system package, you will also need the following software package:</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q7" value="A">
+            <span>A.  Routing</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q7" value="B">
+            <span>B. Dhcp </span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q7" value="C">
+            <span>C. Advance-tools </span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q7" value="D">
+            <span>D.None </span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>D. None</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 8: Which are a necessary section in /queue simple to set bandwidth limitation?</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q8" value="A">
+            <span>A. Target-address, max-limit, dst-address</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q8" value="B">
+            <span>B. Max-limit</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q8" value="C">
+            <span>C. Target-address, dst-address</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q8" value="D">
+            <span>D. Target-address, max limit</span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>D. Target-address, max limit</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 9: Why is it useful to set a Radio Name on the radio interfaces?</h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q9" value="A">
+            <span>A. To identify a station in a list of connected clients.</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q9" value="B">
+            <span>B. To identify a station in the Access List. </span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q9" value="C">
+            <span>C. To identify a station in Neighbor discovery.</span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q9" value="D">
+            <span>D. None of the above</span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>A. To identify a station in a list of connected clients.</p>
+        </div>
+      </div>
+        </div>
+
+<div class="quiz-item">
+    <h3>Question 10: Router A and B are both running as PPPoE servers on different broadcast domains of your network. Is it possible to set Router A to use "/PPP secret" accounts from Router B to authenticate PPPoE customers? </h3>
+    <div class="quiz-options">
+        <label class="quiz-option">
+            <input type="radio" name="q10" value="A">
+            <span>A. Yes </span>
+        </label>
+        <label class="quiz-option">
+            <input type="radio" name="q10" value="B">
+            <span>B. No </span>
+        </label>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+        <span>Correct Answer</span>
+        </button>
+        <div class="dropdown-content">
+          <p>B. No</p>
+        </div>
+      </div>
+        </div>
+            <a href="CyberSecurity.html"><button class="submit-quiz">Submit Quiz</button></a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Learning Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CodingCraft</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master New Skills<br><span>Learn Anytime & Anywhere</span></h1>
+                <p>Access 1000+ courses from top instructors around the world. Join us and boost your career!</p>
+                <a href="Login_Page.html" class="btn">Get Started</a>
+            </div>
+        </section>
+
+        <!-- Featured Courses -->
+        <section id="courses" class="courses">  
+            <h2>Our Popular Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                   <a href="WebDevelopment.html"><img src="WEB.jpeg" alt="Web Development"></a>
+                   <a href="WebDevelopment.html"><h3>Web Development</h3></a>
+                   <a href="WebDevelopment.html"><p>Learn to build modern websites and applications with HTML, CSS, and JavaScript.</p></a>
+                </div>
+                <div class="course-item">
+                   <a href="DataScience.html"><img src="DATA.jpg" alt="Data Science"></a>
+                   <a href="DataScience.html"><h3>Data Science</h3></a>
+                   <a href="DataScience.html"><p>Master data analysis, machine learning, and big data technologies.</p></a>
+                </div>
+                <div class="course-item">
+                   <a href="GraphicDesign.html"><img src="GRAPHIC.jpg" alt="Graphic Design"></a>
+                   <a href="GraphicDesign.html"><h3>Graphic Design</h3></a>
+                   <a href="GraphicDesign.html"><p>Explore design fundamentals, tools like Photoshop, Illustrator, and more.</p></a>
+                </div>
+                <div class="course-item">
+                    <a href="CyberSecurity.html"><img src="CYBER.jpg" alt="Cyber Security"></a>
+                    <a href="CyberSecurity.html"><h3>Cyber Security</h3></a>
+                    <a href="CyberSecurity.html"><p>Cybersecurity is a constant race between innovation and the dark forces of the internet.</p></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonials -->
+        <section id="about"  class="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"The Web Development course was fantastic! The instructors were knowledgeable and the content was top-notch."</p>
+                    <h4>- Shaikh Nomaan</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I learned so much from the Data Science program. The projects were hands-on, and the support was excellent."</p>
+                    <h4>- Shaikh Sejan</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Graphic Design is now my passion thanks to the amazing instructors and course materials provided."</p>
+                    <h4>- Shaikh Sakib</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div id="contact us" class="footer-content">
+                <h3>CodingCraft</h3>
+                <p>Empowering students to achieve their dreams with quality online education.</p>
+                <p><h3>Contact Us On</h3>+91 7567387126<br>+918128959083<br>+91 83209 35602</p>
+                <ul class="socials">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                </ul>
+            </div>
+            <p>&copy; 2024 CodingCraft. All Rights Reserved</p>
+        </footer>
+    </main>
+</body>
+</html>
