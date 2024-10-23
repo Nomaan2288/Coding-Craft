@@ -1,0 +1,233 @@
+/* Resetting and Box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(139deg, #71b7e6, #9b59b6);
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #f1c40f;
+}
+
+/* Hamburger Menu for Mobile */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.quiz-section {
+    padding: 6rem 2rem;
+    text-align: center;
+    background: linear-gradient(139deg, #71b7e6, #9b59b6);
+    color: #f1c40f;
+    font-size: 1.2rem;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz item with hover effects for enjoyment */
+.quiz-item {
+    background-color: white;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.quiz-item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.quiz-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-options {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.quiz-option {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 162, 255, 0.3);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-option:hover {
+    background-color: #2f9ee9;
+    transform: scale(1.05); /* Enhance hover effect */
+}
+
+.quiz-option input[type="radio"] {
+    display: none;
+}
+
+.quiz-option span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.quiz-option input[type="radio"]:checked + span {
+    background-color: #9b59b6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+/* Dropdown for correct answers */
+.dropbtn {
+    background-color: #71b7e6;
+    border-radius: 5px;
+    border: none;
+    margin: 9px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    font-size: 20px;
+    color: green;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Submit Button */
+.submit-quiz {
+    padding: 0.75rem 1.5rem;
+    background-color: #f1c40f;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+}
+
+.submit-quiz:hover {
+    background-color: #d4ac0d;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        max-height: 500px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .quiz-container {
+        padding: 2rem 1rem;
+    }
+
+    .quiz-item {
+        width: 100%;
+    }
+
+    .quiz-options {
+        flex-direction: column;
+    }
+
+    .quiz-item h3 {
+        font-size: 1.2rem;
+    }
+}

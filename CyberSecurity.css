@@ -1,0 +1,373 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(139deg, #71b7e6, #9b59b6);
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #f1c40f;
+}
+
+/* Hamburger Menu for Mobile */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    background-image: url('img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.hero h1 span {
+    color: #f1c40f;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #f1c40f;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Courses Section */
+.courses {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.courses h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.course-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 250px;
+}
+
+.course-item img {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.course-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.course-item a{
+    text-decoration: none;
+    color: #333;
+}
+/* Styling for the quiz button */
+.quiz-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quiz-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #f1c40f;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Animation for button hover */
+.quiz-btn:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+}
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-item h4 {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content p {
+    margin-bottom: 1rem;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials li a {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+    color: #f1c40f;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar Hover Animation */
+.menu li a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+/* Hero Section Animation */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #f1c40f;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Course Item Hover Effect */
+.course-item:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/* Footer Social Icon Hover Effect */
+.socials li a:hover {
+    color: #f1c40f;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        animation: fadeInUp 2s ease-in-out;
+    }
+
+    .course-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-item {
+        width: 100%;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        max-height: 500px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .courses, .testimonials {
+        padding: 2rem 1rem;
+    }
+
+    .course-item, .testimonial-item {
+        width: 100%;
+    }
+
+    .footer-content {
+        padding: 1rem;
+    }
+}
